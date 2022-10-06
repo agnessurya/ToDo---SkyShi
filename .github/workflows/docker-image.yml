@@ -23,4 +23,4 @@ jobs:
     - name : Build the docker image
       run: docker build . --file Dockerfile --tag agnestodos:$(date +%s)
     - name : Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/todo_skyshi2022
+      run: docker push agnessurya/todo_skyshi2022:todos
